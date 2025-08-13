@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony - Your AI Life Companion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='harmony-icon.png') }}" type="image/png">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Meet <span class="gradient-text">Harmony</span>
+                        <br>Your AI Life Companion
+                    </h1>
+                    <p class="hero-subtitle">
+                        Transform your daily life with personalized AI guidance for health, finance, career, and personal growth. 
+                        Available on your phone, anytime, anywhere.
+                    </p>
+                    
+                    <!-- Download Section -->
+                    <div class="download-section">
+                        <div class="qr-container">
+                            <div class="qr-box">
+                                <img src="{{ url_for('static', filename='qr-code.png') }}" alt="Download Harmony App" class="qr-code">
+                                <div class="qr-glow"></div>
+                            </div>
+                            <p class="qr-text">Scan to download<br><strong>Harmony App</strong></p>
+                        </div>
+                        
+                        <div class="download-buttons">
+                            <a href="/download" class="btn btn-primary">
+                                <span class="btn-icon">📱</span>
+                                Download APK
+                            </a>
+                            <div class="download-info">
+                                <span class="file-size">~50MB</span>
+                                <span class="compatibility">Android 7.0+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <img src="{{ url_for('static', filename='app-screenshot.png') }}" alt="Harmony App Interface" class="app-screenshot">
+                            </div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-card card-1">
+                                <div class="card-icon">💡</div>
+                                <div class="card-text">Smart Insights</div>
+                            </div>
+                            <div class="floating-card card-2">
+                                <div class="card-icon">🎯</div>
+                                <div class="card-text">Goal Tracking</div>
+                            </div>
+                            <div class="floating-card card-3">
+                                <div class="card-icon">💬</div>
+                                <div class="card-text">AI Chat</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Harmony?</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏥</div>
+                    <h3>Health & Wellness</h3>
+                    <p>Personalized health advice, habit tracking, and wellness insights tailored to your lifestyle.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Financial Guidance</h3>
+                    <p>Smart budgeting, investment tips, and financial planning to secure your future.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Career Growth</h3>
+                    <p>Professional development advice, skill recommendations, and career pathway guidance.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Goal Achievement</h3>
+                    <p>Set, track, and achieve your life goals with AI-powered motivation and strategies.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Community Support</h3>
+                    <p>Connect with like-minded individuals and build meaningful relationships.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">♿</div>
+                    <h3>Accessibility First</h3>
+                    <p>Designed for everyone with comprehensive accessibility features and inclusive design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Screenshots Section -->
+    <section class="screenshots">
+        <div class="container">
+            <h2 class="section-title">Experience Harmony</h2>
+            <div class="screenshots-carousel">
+                <div class="screenshot-item">
+                    <img src="{{ url_for('static', filename='screenshot-1.png') }}" alt="Harmony Dashboard">
+                    <div class="screenshot-caption">Personalized Dashboard</div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="{{ url_for('static', filename='screenshot-2.png') }}" alt="AI Chat Interface">
+                    <div class="screenshot-caption">AI Chat Interface</div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="{{ url_for('static', filename='screenshot-3.png') }}" alt="Goal Tracking">
+                    <div class="screenshot-caption">Goal Tracking</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">Built with Modern Technology</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon">🤖</div>
+                    <h4>Advanced AI</h4>
+                    <p>Powered by state-of-the-art language models for intelligent conversations</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">📱</div>
+                    <h4>Cross-Platform</h4>
+                    <p>Built with Kotlin Multiplatform for Android and iOS</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🔒</div>
+                    <h4>Privacy First</h4>
+                    <p>Your data stays secure with end-to-end encryption</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">⚡</div>
+                    <h4>Lightning Fast</h4>
+                    <p>Optimized performance for smooth user experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Life?</h2>
+                <p>Join thousands of users who are already living better with Harmony</p>
+                
+                <div class="cta-download">
+                    <div class="qr-container-large">
+                        <img src="{{ url_for('static', filename='qr-code.png') }}" alt="Download Harmony App" class="qr-code-large">
+                        <p class="qr-text-large">Scan with your phone to download</p>
+                    </div>
+                    
+                    <div class="download-options">
+                        <a href="/download" class="btn btn-secondary">
+                            <span class="btn-icon">⬇️</span>
+                            Direct Download
+                        </a>
+                        <div class="support-text">
+                            <small>Requires Android 7.0 or higher</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Harmony</h3>
+                    <p>Your AI Life Companion</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#screenshots">Screenshots</a></li>
+                            <li><a href="/download">Download</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="mailto:support@harmony.app">Contact</a></li>
+                            <li><a href="#privacy">Privacy</a></li>
+                            <li><a href="#terms">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Harmony AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
