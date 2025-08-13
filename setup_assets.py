@@ -102,7 +102,7 @@ def create_placeholder_screenshots(static_dir):
 def create_app_icon(static_dir):
     """Create a simple app icon"""
     
-    icon_path = os.path.join(static_dir, 'harmony-icon.png')
+    icon_path = os.path.join(static_dir, 'app-icon-highres.png')
     
     if not os.path.exists(icon_path):
         # Create a 256x256 icon
