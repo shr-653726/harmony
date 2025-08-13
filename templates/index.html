@@ -12,39 +12,84 @@
     <div class="app">
         <!-- Header -->
         <header class="header">
-            <div class="logo">Harmony</div>
+            <div class="container">
+                <div class="nav">
+                    <div class="logo">Harmony</div>
+                    <div class="nav-links">
+                        <a href="#download" class="nav-link">Download</a>
+                    </div>
+                </div>
+            </div>
         </header>
 
-        <!-- Main Content -->
-        <main class="main">
-            <div class="card">
-                <div class="card-header">
-                    <h1 class="title">Your Personal AI<br>Life Companion</h1>
-                    <p class="subtitle">Transform your daily life with personalized AI guidance.</p>
+        <!-- Hero Section -->
+        <main class="hero">
+            <div class="hero-background">
+                <div class="gradient-overlay"></div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p class="hero-tagline">Made for curious minds</p>
+                        <h1 class="hero-title">
+                            Your Personal AI<br>
+                            Life Companion
+                        </h1>
+                        <p class="hero-subtitle">
+                            Transform your daily life with personalized AI guidance for health, 
+                            finance, career, and personal growth. Everything in one place to make 
+                            your journey simpler and more meaningful.
+                        </p>
+                        
+                        <div class="hero-actions" id="download">
+                            <div class="download-section">
+                                <div class="qr-container">
+                                    <div class="qr-code">
+                                        <img src="{{ url_for('static', filename='qr-code.png') }}" alt="Download Harmony">
+                                    </div>
+                                    <p class="qr-text">Scan to download</p>
+                                </div>
+                                
+                                <div class="download-options">
+                                    <a href="/download" class="download-btn primary">
+                                        <span class="download-icon">📱</span>
+                                        Download APK
+                                    </a>
+                                    <div class="download-info">
+                                        <span class="info-item">✓ Free to use</span>
+                                        <span class="info-item">✓ 44MB download</span>
+                                        <span class="info-item">✓ Android 7.0+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="card-content">
-                    <div class="qr-section">
-                        <div class="qr-container">
-                            <img src="{{ url_for('static', filename='qr-code.png') }}" alt="Download Harmony" class="qr-code">
-                        </div>
-                        <p class="qr-text">Scan to download</p>
-                    </div>
-                    
-                    <div class="info-section">
-                        <div class="info-items">
-                            <span class="info-item">Free</span>
-                            <span class="info-item">44MB</span>
-                            <span class="info-item">Android 7.0+</span>
-                        </div>
-                    </div>
+            </div>
+            
+            <!-- Floating Elements -->
+            <div class="floating-elements">
+                <div class="floating-element element-1">
+                    <div class="feature-icon">🧠</div>
+                </div>
+                <div class="floating-element element-2">
+                    <div class="feature-icon">💡</div>
+                </div>
+                <div class="floating-element element-3">
+                    <div class="feature-icon">🎯</div>
+                </div>
+                <div class="floating-element element-4">
+                    <div class="feature-icon">🤝</div>
                 </div>
             </div>
         </main>
 
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2024 Harmony</p>
+            <div class="container">
+                <p>&copy; 2024 Harmony. Made with curiosity.</p>
+            </div>
         </footer>
     </div>
 </body>
