@@ -9,71 +9,43 @@
     <link rel="icon" href="{{ url_for('static', filename='harmony-icon.png') }}" type="image/png">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="nav">
-                <div class="logo">
-                    <span>Harmony</span>
-                </div>
-                <div class="nav-links">
-                    <a href="#download" class="nav-link">Download</a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">Harmony</div>
+        </header>
 
-    <!-- Hero Section -->
-    <main class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        Your Personal AI<br>
-                        Life Companion
-                    </h1>
-                    <p class="hero-subtitle">
-                        Transform your daily life with personalized AI guidance for health, finance, career, and personal growth.
-                    </p>
+        <!-- Main Content -->
+        <main class="main">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="title">Your Personal AI<br>Life Companion</h1>
+                    <p class="subtitle">Transform your daily life with personalized AI guidance.</p>
                 </div>
                 
-                <div class="hero-actions">
-                    <div class="download-section" id="download">
+                <div class="card-content">
+                    <div class="qr-section">
                         <div class="qr-container">
-                            <div class="qr-code">
-                                <img src="{{ url_for('static', filename='qr-code.png') }}" alt="Download QR Code">
-                            </div>
-                            <p class="qr-text">Scan to download</p>
+                            <img src="{{ url_for('static', filename='qr-code.png') }}" alt="Download Harmony" class="qr-code">
                         </div>
-                        
-                        <div class="download-options">
-                            <a href="/download" class="download-btn">
-                                <span class="download-icon">📱</span>
-                                Download APK
-                            </a>
-                            <div class="download-info">
-                                <span>Free • 44MB • Android 7.0+</span>
-                            </div>
+                        <p class="qr-text">Scan to download</p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <div class="info-items">
+                            <span class="info-item">Free</span>
+                            <span class="info-item">44MB</span>
+                            <span class="info-item">Android 7.0+</span>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="hero-visual">
-                <div class="phone-preview">
-                    <img src="{{ url_for('static', filename='screenshots/career-guidance.png') }}" alt="Harmony App Preview" class="phone-screenshot">
-                </div>
-            </div>
-        </div>
-    </main>
+        </main>
 
-    <!-- Simple Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 Harmony. Made with curiosity.</p>
-            </div>
-        </div>
-    </footer>
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Harmony</p>
+        </footer>
+    </div>
 </body>
 </html>
